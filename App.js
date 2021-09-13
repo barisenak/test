@@ -29,7 +29,7 @@ import {
 const Section = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
   return (
-    <View style={styles.sectionContainer}>
+    <ScrollView style={styles.sectionContainer}>
       <Text
         style={[
           styles.sectionTitle,
@@ -48,7 +48,7 @@ const Section = ({children, title}): Node => {
         ]}>
         {children}
       </Text>
-    </View>
+    </ScrollView>
   );
 };
 
